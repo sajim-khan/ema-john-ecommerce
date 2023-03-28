@@ -1,6 +1,5 @@
 #root {
-  min-width: 1280px;
-  padding: 0 2rem;
+  min-width: 100%;
 }
 
 .logo {
