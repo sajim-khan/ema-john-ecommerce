@@ -1,10 +1,74 @@
-.product{
-    width: 300px;
-    height: 500px;
+.product {
+  width: 300px;
+  height: 510px;
+  border: 1px solid #95a0a7;
+  border-radius: 8px;
+  position: relative;
 }
 
-.product img{
-    width: 286px;
-    height: 286px;    
+.product img {
+  width: 286px;
+  height: 286px;
+  border-radius: 8px;
+  margin: 7px;
 }
 
+.product-name {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #0e161a;
+  margin: 5px 0 0 15px;
+}
+
+.product-price {
+  margin: 10px 0 0 15px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.0015em;
+  color: #0e161a;
+}
+
+.product-manufacturer {
+  margin: 30px 0 0 15px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 14px;
+  color: #2a414f;
+}
+
+.product-rating {
+  margin: 10px 0 0 15px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #2a414f;
+}
+
+.cart-button {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #0e161a;
+  width: 100%;
+  background: #ffe0b3;
+  border: 1px solid #95a0a7;
+  border-radius: 0px 0px 8px 8px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.cart-button:hover {
+    background-color: rgb(122, 169, 211)
+}

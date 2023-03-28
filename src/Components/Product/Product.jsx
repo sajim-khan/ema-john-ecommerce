@@ -8,8 +8,11 @@ console.log(props.product);
     return (
       <div className="product">
         <img src={img} alt="" />
-        <h5>Product Name: {name}</h5>
-        <h4>Price: {price}</h4>
+          <h6 className="product-name">{name}</h6>
+          <h4 className="product-price">Price: ${price}</h4>
+          <p className="product-manufacturer">Manufacturer: {seller}</p>
+          <p className="product-rating">Rating: {ratings}</p>
+          <button className='cart-button'>Add to Cart</button>        
       </div>
     );
 };
