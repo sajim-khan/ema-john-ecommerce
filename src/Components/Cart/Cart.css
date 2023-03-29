@@ -1,0 +1,57 @@
+.cart {
+  position: absolute;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  height: 600px;
+  width: 250px;
+  background: rgba(255, 153, 0, 0.3);
+}
+
+.item {
+  margin-left: 15px;
+}
+
+.title {
+  margin: 35px 50px 45px 35px;
+  font-size: 22px;
+  line-height: 30px;
+  color: #1c2b35;
+}
+
+.shipping-charge,
+.tax,
+.price,
+.Items {
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 25px;
+  color: #2a414f;
+}
+
+.total {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: 25px;
+  color: #0e161a;
+}
+
+.clear-button {
+  margin: 20px 25px 15px 8px;
+  color: #ffffff;
+  width: 210px;
+  height: 48px;
+  background: #ff3030;
+  border-radius: 6px;
+}
+
+.order-button {
+  margin-top: 0 10px;
+  color: #ffffff;
+  width: 232px;
+  height: 48px;
+  background: #ff9900;
+  border-radius: 6px;
+}
+
