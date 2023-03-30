@@ -35,7 +35,17 @@ const Shop = () => {
 
   const handelAddToCart = (product) => {
     //   console.log(cart);
-    const newCart = [...cart, product];
+    let newCart = [];
+    // optional line for update quantity 39, 40, 41
+    //const newCart = [...cart, product];
+    // if product does not exist in the cart then set quantity = 1
+    // if exist then update quantity by 1
+    const exists = cart.find(product => product.id === product.id);
+    if(!exists){
+    product.quantity = 1;
+      newCart = [...cart, product];
+    }
+    
     setCart(newCart);
     addToDb(product.id);
   };
