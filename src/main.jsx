@@ -8,6 +8,7 @@ import Home from './Components/Layout/Home';
 import Inventory from './Components/Inventory/Inventory';
 import Orders from './Components/Orders/Orders';
 import Login from './Components/Login/Login';
+import cartProductsLoader from './Components/Loaders/cartProductsLoader';
 
 
 const router = createBrowserRouter([
