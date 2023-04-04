@@ -21,16 +21,17 @@ const router = createBrowserRouter([
       },
       {
         path: "orders",
-        element: <Orders></Orders>
+        element: <Orders></Orders>,
+        loader: cartProductsLoader,
       },
       {
         path: "inventory",
-        element: <Inventory></Inventory>
+        element: <Inventory></Inventory>,
       },
       {
-        path: 'login',
-        element: <Login></Login>
-      }
+        path: "login",
+        element: <Login></Login>,
+      },
     ],
   },
 ]);
