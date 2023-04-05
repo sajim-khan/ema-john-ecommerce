@@ -3,7 +3,7 @@ import "./Cart.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, handleClearCart }) => {
   //const cart = props.cart; // option 1
   //const {cart} = props; // option 2
 
@@ -19,7 +19,7 @@ const Cart = ({ cart }) => {
     // }
     //shortcut way
     //product.quantity = product.quantity || 1;
-    
+
     total = total + product.price * product.quantity;
     totalShipping = totalShipping + product.shipping;
     quantity = quantity + product.quantity;
@@ -41,7 +41,7 @@ const Cart = ({ cart }) => {
         <p className="tax">Tax: ${tax.toFixed(2)}</p>
         <h6 className="total">Grand Total: ${grandTotal.toFixed(2)}</h6>
       </div>
-      <button className="clear-button">
+      <button onClick={handleClearCart} className="clear-button">
         Clear Cart <FontAwesomeIcon icon={faTrash} />
       </button>
       <button className="order-button">
