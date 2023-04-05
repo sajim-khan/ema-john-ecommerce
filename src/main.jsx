@@ -9,6 +9,7 @@ import Inventory from './Components/Inventory/Inventory';
 import Orders from './Components/Orders/Orders';
 import Login from './Components/Login/Login';
 import cartProductsLoader from './Components/Loaders/cartProductsLoader';
+import Checkout from './Components/Checkout/Checkout';
 
 
 const router = createBrowserRouter([
@@ -30,6 +31,12 @@ const router = createBrowserRouter([
         element: <Inventory></Inventory>,
       },
       {
+      
+        path: 'checkout',
+        element: <Checkout></Checkout>
+      }
+      ,
+      {
         path: "login",
         element: <Login></Login>,
       },
@@ -42,3 +49,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+
+
+
